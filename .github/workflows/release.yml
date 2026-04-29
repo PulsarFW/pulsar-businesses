@@ -22,7 +22,7 @@ jobs:
         run: |
           mkdir -p ./temp/pulsar-businesses
           cp ./{README.md,fxmanifest.lua} ./temp/pulsar-businesses
-          cp -r ./{client,server,config,dui} ./temp/pulsar-businesses
+          cp -r ./{client,server,config,dui,shared} ./temp/pulsar-businesses
           cd ./temp && zip -r ../pulsar-businesses.zip ./pulsar-businesses
 
       - name: Create release
