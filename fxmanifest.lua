@@ -7,28 +7,28 @@ client_script("@pulsar-pwnzor/client/check.lua")
 description("Pulsar Framework Businesses Script")
 name("Pulsar Framework: pulsar-businesses")
 author("Dr Nick")
-version("v1.0.0")
+version "1.0.1"
 
 client_scripts({
-	"client/**/*.lua",
+  "client/**/*.lua",
 })
 
 server_scripts({
-	'@oxmysql/lib/MySQL.lua',
-	"config/sv_config.lua",
-	"config/businesses/*.lua",
-	"server/**/*.lua",
+  '@oxmysql/lib/MySQL.lua',
+  "config/sv_config.lua",
+  "config/businesses/*.lua",
+  "server/**/*.lua",
 })
 
 shared_scripts({
-	"shared/**/*.lua",
+  "shared/**/*.lua",
 })
 
 files({
-	"dui/bowling/app.js",
-	"dui/bowling/index.html",
-	"dui/bowling/*.png",
-	"dui/bowling/gifs/*.gif",
-	"dui/tvs/app.js",
-	"dui/tvs/index.html",
+  "dui/bowling/app.js",
+  "dui/bowling/index.html",
+  "dui/bowling/*.png",
+  "dui/bowling/gifs/*.gif",
+  "dui/tvs/app.js",
+  "dui/tvs/index.html",
 })
