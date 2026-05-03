@@ -11,7 +11,7 @@ AddEventHandler('Businesses:Server:Startup', function()
                     return cb(true)
                 end
             elseif itemData then
-                if exports.ox_inventory:ItemsHas(char:GetData('SID'), 1, data.type, 1) then
+                if exports.ox_inventory:ItemsHas(char:GetData('SID'), data.type, 1) then
                     if exports.ox_inventory:Remove(char:GetData('SID'), 1, data.type, 1) then
                         exports['pulsar-finance']:WalletModify(targetChar:GetData('Source'),
                             math.floor(itemData.price * 0.1))
