@@ -102,7 +102,7 @@ AddEventHandler("Businesses:Server:Startup", function()
 						_tacoDeliveryCash = math.floor(_tacoDeliveryCash * repLevel)
 					end
 
-					if exports.ox_inventory:ItemsHas(char:GetData("SID"), 1, "moneyroll", 1) then
+					if exports.ox_inventory:ItemsHas(char:GetData("SID"), "moneyroll", 1) then
 						local _moneyRollCount = exports.ox_inventory:ItemsGetCount(char:GetData("SID"), 1,
 							"moneyroll")
 						local itemDataMoneyRoll = exports.ox_inventory:ItemsGetData("moneyroll")
@@ -118,7 +118,7 @@ AddEventHandler("Businesses:Server:Startup", function()
 								repGained = repGained + math.random(3)
 							end
 						end
-					elseif exports.ox_inventory:ItemsHas(char:GetData("SID"), 1, "moneyband", 1) then
+					elseif exports.ox_inventory:ItemsHas(char:GetData("SID"), "moneyband", 1) then
 						local _moneyBandCount = exports.ox_inventory:ItemsGetCount(char:GetData("SID"), 1,
 							"moneyband")
 						local itemDataMoneyBand = exports.ox_inventory:ItemsGetData("moneyband")
