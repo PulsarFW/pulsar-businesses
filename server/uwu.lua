@@ -17,7 +17,7 @@ function RegisterItems()
 		if exports.ox_inventory:ItemsHas(char:GetData("SID"), 1, "uwu_prize_box", 1) then
 			if exports.ox_inventory:RemoveSlot(item.Owner, "uwu_prize_box", 1, item.Slot, 1) then
 				local prize = exports['pulsar-core']:UtilsWeightedRandom(_uwuPrizes)
-				exports.ox_inventory:AddItem(char:GetData("SID"), prize, 1, {}, 1)
+				exports.ox_inventory:AddItem(source, prize, 1, {}, 1)
 			end
 		end
 	end)

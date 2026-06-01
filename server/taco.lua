@@ -79,7 +79,7 @@ AddEventHandler("Businesses:Server:Startup", function()
 			if _deliveryCounter < 0 then
 				_deliveryCounter = 0
 			end
-			exports.ox_inventory:AddItem(char:GetData("SID"), _dropOffItem, 1, {}, 1)
+			exports.ox_inventory:AddItem(source, _dropOffItem, 1, {}, 1)
 			GlobalState["TacoShop:Counter"] = _deliveryCounter
 			GlobalState["TacoShop:CurrentItem"] = _currentCookItem
 			TriggerClientEvent("Taco:SetQueue", -1, { counter = _deliveryCounter, item = _currentCookItem })
